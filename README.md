@@ -1,20 +1,23 @@
 # MultiThreaded Cleaning Robot Simulations 
 
-## Objective: 
+## Objective 
 Implement two advanced algorithms to maximize cleaning efficiency.
-The program shall run simulations for all the combinations of house⇔algorithm (the “cartesian product” of the two).
+The program runs simulations for all the combinations of house ⇔ algorithm (the “cartesian product” of the two).
 
-## Functionality: 
+
+## Functionality
 The robot uses two distinct algorithms to clean the house with the fewest steps possible, aiming to be as efficient as possible in order to increase the chance that one of the implementations would be effective in some cases and the other in other cases. 
 The goal is to optimize the cleaning process and minimize energy consumption, increasing the chances of winning an efficiency competition.
 
-# Implementation of the algorithms:
+
+# Implementation of the algorithms
 - Algorithm A: 
     The robot uses two progression methods, the first circular and the second greedy. The circular progress is made by progressing "in rings" around the robot's docking station. If the robot cannot progress because it encounters an obstacle, it locates a point with a radius that is the same or one greater than the radius where it detected the obstacle and moves towards it.
     If the robot detects that it is "trapped" in the walls because the radius cannot be increased,, it concludes that it is no longer possible to move forward in a circular motion and switches to a greedy mode of operation so that it always searches for the nearest point that it needs to clean or that it has not yet been to until there is no dirt or new points left.
 
 - Algorithm B: 
     A greedy algorithm that aims to clean as much as possible and therefore will always look for the closest known dirty spot.
+
 
 ## House Representation
 The house is represented as a text file with the following characters:
@@ -29,18 +32,19 @@ Max Steps: The robot is limited by a maximum number of steps, which is defined i
 Battery Life: The robot's battery life is also limited, necessitating careful management of its energy during cleaning.
 
 
-
 ## Project Structure
 
 The project consists of:
 - **Main Application:** Compiles the main simulator executable.
 - **Algorithms:** Two separate algorithms (`Algorithm_A` and `Algorithm_B`) implemented as shared objects (`.so` files).
 
+
 ## Prerequisites
 
 Ensure that you have the following tools installed on your system:
 - `g++`: GNU Compiler Collection to compile C++ code.
 - `make`: A build automation tool to execute the commands in the Makefile.
+
 
 ## Build Instructions
 
@@ -62,19 +66,22 @@ In order to compile the files seperatly, use:
 `make Algorithm_A.so`
 `make Algorithm_B.so`
 
+
 ## How to run
-./myrobot -house_path=<housepath> -algo_path=<algopath> -num_threads=<NUMBER>
+./myrobot -house_path=<housepath> -algo_path=<algopath> -num_threads=<number>
+
+Note:
+if not provided num_threads, num_threads=10 by default.
+
 ```bash
 ./myrobot -house_path="house files" -algo_path=so_files
 ```
-if not provided num_threads, num_threads=10 by default.
 
 ### Optional
 Add an additional command-line argument -summary_only with this flag, 
 the simulation will generate only the summary.csv file and error files, 
 but will not generate the other output files per house⇔algorithm pairs.
 
-Example: 
 ```bash
 ./myrobot -house_path="house files" -algo_path=so_files -num_threads=7 -summary_only
 ```
@@ -89,6 +96,8 @@ The input file should contain the following information:
 5. House layout:
    each char represents a dirt level (`0-9`), a wall (`W`), or the docking station (`D` - must have one).
 
+
+
 ## Output File Format
 The program generates an output file which has the following data:
 1. NumSteps - The number of steps taken.
@@ -101,6 +110,7 @@ The program generates an output file which has the following data:
 - 'W' for West
 - 's' to stay
 - 'F' to finish
+
 
 ### Input File - example (`inputfile.txt`)
 ```
@@ -119,6 +129,8 @@ W7777777777799WW99W
 W4567WW2888899W999W
 99999999999999WWWWW
 ```
+
+
 ### Output File - example (`output_inputfile.txt`)
 ```
 NumSteps = 2163
@@ -129,7 +141,7 @@ NsssssssssEsssssssssEsssssssssEsssssssssSsssssssssWsssNWWSssssssssssssssssssssEs
 
 ```
 
-## A representation of the house as the algorithm should refer to it during the run (from ex2/ex3)
+## A representation of the house as the algorithm should refer to it during the run
 ```
 currentLocation: layout[16][2] = D
 number of steps so far = 0        
@@ -150,7 +162,7 @@ W W W W W W W W W W W W W W W W W W W W W
 ```
 
 
-## Displaying the house after the algorithm has finished running (from ex2/ex3)
+## Displaying the house after the algorithm has finished running
 ```
 currentLocation: layout[16][2] = D
 number of steps so far = 2163     
