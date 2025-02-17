@@ -1,0 +1,15 @@
+Labyrinth B
+MaxSteps = 600
+MaxBattery = 100
+Rows = 10
+Cols = 18
+WWWWWWWWWWWWWWWWWW
+W  2 WWW  W W 7 WW
+W  W  W 7   W3W  W
+W  WW W W WW W W W
+WW W 1  W WD   W W
+WW W W WW W WW W W
+W  WWW W WW W5 W W
+W W  2 WW W  W W W
+W 3 WW     4     W
+WWWWWWWWWWWWWWWWWW

@@ -1,0 +1,8 @@
+Unreachable dirt in Line without dying
+MaxSteps = 400
+MaxBattery = 20
+Rows = 3
+Cols = 39
+WWWWWWWWWWWWWWW
+WD           1W
+WWWWWWWWWWWWWWW

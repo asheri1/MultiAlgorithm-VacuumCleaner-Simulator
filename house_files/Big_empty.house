@@ -1,0 +1,15 @@
+Big empty house
+MaxSteps = 800
+MaxBattery = 40
+Rows = 10
+Cols = 18
+WWWWWWWWWWWWWWWWWW
+WD               W
+W    5           W
+W        1       W
+W    4           W
+W      3         W
+W           7    W
+W       1        W
+W                W
+WWWWWWWWWWWWWWWWWW

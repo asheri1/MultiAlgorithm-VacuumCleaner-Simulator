@@ -1,0 +1,16 @@
+intersections House
+MaxSteps = 400
+MaxBattery = 40
+Rows = 11
+Cols = 11
+WWWWWWWWWWW
+W9        W
+W W W W W W
+W    W    W
+W W W W W W
+W 3  D   WW
+W W W W W W
+W  1      W
+W W W W W W
+W9       5W
+WWWWWWWWWWW

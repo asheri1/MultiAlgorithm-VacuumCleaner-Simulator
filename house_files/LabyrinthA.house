@@ -1,0 +1,15 @@
+Labyrinth A
+MaxSteps = 800
+MaxBattery = 80
+Rows = 10
+Cols = 18
+WWWWWWWWWWWWWWWWWW
+WW DW3 W  W5    WW
+WW W W    WWWWW  W
+WW W             W
+W  W WW WWW WW W W
+W W W4    W WWWWWW
+W W W WWWW4 WW  9W
+W W W W2W1WWWW WWW
+W                W
+WWWWWWWWWWWWWWWWWW

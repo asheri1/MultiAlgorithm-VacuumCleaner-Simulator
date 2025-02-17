@@ -1,0 +1,21 @@
+Huge house 2
+MaxSteps = 1000
+MaxBattery = 60
+Rows = 10
+Cols = 10
+WWWWWWWWWW
+WW W     W
+W W1 WWW W
+WW W WW1 W
+WW  D W  W
+W1  W W WW
+WW W1 W WW
+W W  W1 WW
+WWW WWWWWW
+WW1   1 WW
+WW W  W WW
+W WW 1WWWW
+W W WWWW W
+W 1 WW1 WW
+WWWWW    W
+WWWWWWWWWW

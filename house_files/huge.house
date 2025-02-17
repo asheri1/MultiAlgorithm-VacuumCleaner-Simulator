@@ -1,0 +1,16 @@
+Huge House
+MaxSteps = 1200
+MaxBattery = 60
+Rows = 11
+Cols = 17
+WWWWWWWWWWWWWWWWW
+WWWWWWW   1     W
+WW D 12         W
+WW 34W  56W     W
+WW 7890W  3     W
+W       1       W
+W  WW     W     W
+W      WW 4  W  W
+WW 123W  45W    W
+WW 67890W       W
+WWWWWWWWWWWWWWWWW
